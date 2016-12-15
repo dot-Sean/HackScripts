@@ -1,4 +1,5 @@
 from tor_connect import tor_connect
+from new_identity import new_identity
 import httplib
 import socks
 import socket
