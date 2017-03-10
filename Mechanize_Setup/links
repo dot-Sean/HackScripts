@@ -1,0 +1,14 @@
+# Testing presence of link (if the link is not found you would have to
+# handle a LinkNotFoundError exception)
+br.find_link(text='Weekend codes')
+
+# Actually clicking the link
+req = br.click_link(text='Weekend codes')
+br.open(req)
+print br.response().read()
+print br.geturl()
+
+# Back
+br.back()
+print br.response().read()
+print br.geturl()

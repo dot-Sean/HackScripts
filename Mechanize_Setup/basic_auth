@@ -1,0 +1,4 @@
+# If the protected site didn't receive the authentication data you would
+# end up with a 410 error in your face
+br.add_password('http://safe-site.domain', 'username', 'password')
+br.open('http://safe-site.domain')

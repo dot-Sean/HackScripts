@@ -1,0 +1,7 @@
+# Proxy and user/password
+br.set_proxies({"http": "joe:password@myproxy.example.com:3128"})
+
+# Proxy
+br.set_proxies({"http": "myproxy.example.com:3128"})
+# Proxy password
+br.add_proxy_password("joe", "password")

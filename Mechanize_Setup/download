@@ -1,0 +1,4 @@
+# Download
+f = br.retrieve('http://www.google.com.br/intl/pt-BR_br/images/logo.gif')[0]
+print f
+fh = open(f)
